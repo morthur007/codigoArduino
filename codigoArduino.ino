@@ -265,7 +265,7 @@ void loop()
       }
     }
     else{
-      recebido = "";
+      recebido = ""; //modificar
       if(SerialBT.available()){
         char dados = SerialBT.read();
         recebido += dados;
