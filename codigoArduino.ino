@@ -214,6 +214,8 @@ void loop()
   if(timer1==300)
     timer1=0;
   timer1++;
+  
+  recebido = "";
 
   if(SerialBT.hasClient())
   {
@@ -265,7 +267,6 @@ void loop()
       }
     }
     else{
-      recebido = ""; //modificar
       if(SerialBT.available()){
         char dados = SerialBT.read();
         recebido += dados;
